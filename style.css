@@ -1,0 +1,49 @@
+* {
+    background-color: hsl(217, 54%, 11%)
+}
+
+p {
+    background-color: hsl(216, 50%, 16%);
+    font-family: 'Space Mono', monospace;
+    padding-left: 10px;
+    text-align: left;
+}
+.info-row {
+}
+
+.nftBox {
+    border: 2px solid black;
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    color:hsl(215, 51%, 70%);
+    background-color: hsl(216, 50%, 16%);
+}
+
+.nftBox img {
+    width: 90%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    float: left;
+}
+
+.clock{
+    float: right;
+}
+
+.days{
+    text-align: right;
+    float: right;
+}
+
+
+.clearfix {
+    clear: both;
+}
