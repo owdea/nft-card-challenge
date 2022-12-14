@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- <meta http-equiv="refresh" content="10" /> -->
   <link href="style.css" rel="stylesheet" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  
   
   <title>Frontend Mentor | NFT preview card component</title>
 
@@ -19,20 +21,35 @@
     @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
   </style>
 </head>
+
 <body>
   <div class="nftBox">
     <img src="images/image-equilibrium.jpg" alt="Equilibrium">
-    <p>Equilibrium #3429</p>
+    <p class="name">Equilibrium #3429</p>
 
     <p>Our Equilibrium collection promotes balance and calm.</p>
+
     <div class="info-row">
-      <p class="price">0.041 ETH</p>
-      <p class="days">3 days left</p>
-      <svg class="clock" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+
+      <div class="price-div">
+        <svg class="currency" width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+        <p class="price">0.041 ETH</p>
+      </div>
+
+      <div class="creation-div">
+        <svg class="clock" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+        <p class="days">3 days left</p>
+      </div>
+
     </div>
+
     <div class="clearfix"></div>
+
+    <div className="creation-row">
+      <img class="user-image" src="images/image-avatar.png" alt="userImg">
+      <p class="author">Creation of Jules Wyvern</p>
+    </div>
     
-    <p>Creation of Jules Wyvern</p>
   </div>
 
   <div class="attribution">

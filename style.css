@@ -8,8 +8,6 @@ p {
     padding-left: 10px;
     text-align: left;
 }
-.info-row {
-}
 
 .nftBox {
     border: 2px solid black;
@@ -29,6 +27,37 @@ p {
     align-self: center;
 }
 
+.name {
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+}
+.price-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.creation-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.currency {
+    float: left;
+    background-color: hsl(216, 50%, 16%);
+}
+
 .price {
     color: hsl(178, 100%, 50%);
     float: left;
@@ -36,6 +65,7 @@ p {
 
 .clock{
     float: right;
+    background-color: hsl(216, 50%, 16%);
 }
 
 .days{
@@ -43,7 +73,24 @@ p {
     float: right;
 }
 
-
 .clearfix {
     clear: both;
+}
+
+.creation-row {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-image {
+    border: 0.5px solid white;
+    max-width: 18px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.author {
+    background-color: hsl(216, 50%, 16%);
+    text-align: right;
 }
