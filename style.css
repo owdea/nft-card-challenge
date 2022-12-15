@@ -20,14 +20,53 @@ p {
     background-color: hsl(216, 50%, 16%);
 }
 
-.nftBox img {
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper:hover .nft-overlay {
+    opacity: 1;
+}
+
+.nft-overlay {
+    position: absolute;
+    opacity: 0;
+    margin: auto;
+    left: 42%;
+    top: 45%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90%;
+    width: 90%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+    align-self: center;
+    align-items: center;
+}
+
+.img-wrapper:hover .overlay {
+    opacity: 0.5;
+}
+
+.nft-image {
     width: 90%;
     height: 90%;
     margin-top: 10px;
     border-radius: 10px;
     align-self: center;
-    color: 
+    align-items: center;
+    transition: 0.5s ease;
 }
+
+
 
 .title {
     font-weight: 600;
@@ -105,6 +144,11 @@ p {
     background-color: hsl(216, 50%, 16%);
     float: left;
     margin-left: 10px;
+    width: 90%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    align-self: center;
 }
 
 .author {
